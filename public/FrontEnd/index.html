@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CVE Data</title>
+    <link rel="stylesheet" href="/FrontEnd/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CVE Data</h1>
+      <div class="total-records">
+        <strong>Total records:</strong> <span id="total-records">0</span>
+      </div>
+      <table id="cve-table">
+        <thead>
+          <tr>
+            <th>CVE ID</th>
+            <th>Identifier</th>
+            <th>Published Date</th>
+            <th>Last Modified Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="cve-table-body"></tbody>
+      </table>
+      <div class="results-per-page">
+        <label for="results-per-page-select"
+          ><strong>Results per page:</strong></label
+        >
+        <select id="results-per-page-select">
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+        </select>
+        <div class="total-numbers-container">
+          <div id="total-numbers-viewed" class="total-numbers-viewed"></div>
+        </div>
+      </div>
+      <div class="pagination">
+        <button id="prev-page-btn">Previous</button>
+        <button id="next-page-btn">Next</button>
+      </div>
+    </div>
+    <script src="FrontEnd/scripts/index.js"></script>
+  </body>
+</html>
